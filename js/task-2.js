@@ -28,8 +28,12 @@ const images = [
   }
 ];
 
+let temp = "";
+
 images.forEach(image => {
-  document
-  .querySelector(".gallery")
-  .insertAdjacentHTML("beforeend",`<li><img src="${image.url}" alt="${image.alt}"></li>`);
+  temp += `<li><img src="${image.url}" alt="${image.alt}"></li>`;
 });
+
+document
+.querySelector(".gallery")
+.insertAdjacentHTML("beforeend", temp);
