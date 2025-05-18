@@ -1,5 +1,6 @@
 "use strict";
 
+
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
@@ -27,10 +28,8 @@ const images = [
   }
 ];
 
-
-
-console.log("//Start of task 2.");
-
-
-
-console.log("//End of task 2.");
+images.forEach(image => {
+  document
+  .querySelector(".gallery")
+  .insertAdjacentHTML("beforeend",`<div><img src="${image.url}" alt="${image.alt}"></div>`);
+});

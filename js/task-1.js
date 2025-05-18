@@ -1,9 +1,15 @@
 "use strict";
 
 
-
-console.log("//Start of task 1.");
-
+const categories = document.querySelectorAll("#categories .item");
 
 
-console.log("//End of task 1.");
+console.log(`Number of categories: ${categories.length}`);
+
+categories.forEach(category => {
+    const title = category.querySelector("h2");
+    const elements = category.querySelectorAll("li");
+
+    console.log(`Category: ${title.textContent}`);
+    console.log(`Elements: ${elements.length}`);
+});

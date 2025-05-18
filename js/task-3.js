@@ -1,9 +1,13 @@
 "use strict";
 
 
+const nameInput = document.querySelector("#name-input");
 
-console.log("//Start of task 3.");
+nameInput.addEventListener("input", () => {
+    const nameOutput = document.querySelector("#name-output");
 
-
-
-console.log("//End of task 3.");
+    // Если значение инпута не пустое,
+    // то задать аутпуту значение инпута,
+    // иначе задать аутпуту значение "Anonymous".
+    nameInput.value !== "" ? nameOutput.textContent = nameInput.value : nameOutput.textContent = "Anonymous";
+});

@@ -52,6 +52,12 @@ h2 {
   line-height: 1.33;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 input {
   font-family: inherit;
   background-color: transparent;
@@ -79,7 +85,7 @@ input,
   width: 360px;
   height: 40px;
 
-  padding: 8px 0 8px 16px;
+  padding: 8px 16px;
 }
 
 #categories .item h2, /*task 1*/
@@ -112,7 +118,18 @@ input,
 /*#endregion*/
 
 /*#region task 3*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
 
+.gallery div {
+  display: flex;
+  align-items: center;
+  flex-basis: calc((100% - 44px * 2) / 3);
+}
 /*#endregion*/
 
 /*#region task 4*/
