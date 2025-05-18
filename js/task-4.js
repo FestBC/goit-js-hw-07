@@ -3,7 +3,7 @@
 
 const loginForm = document.querySelector(".login-form");
 
-loginForm.addEventListener("submit", () => {
+loginForm.addEventListener("submit", event => {
     event.preventDefault();
 
     const email = loginForm.querySelector('[name="email"]');

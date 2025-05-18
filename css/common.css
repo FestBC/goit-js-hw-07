@@ -125,7 +125,7 @@ input,
   row-gap: 48px;
 }
 
-.gallery div {
+.gallery li {
   display: flex;
   align-items: center;
   flex-basis: calc((100% - 44px * 2) / 3);

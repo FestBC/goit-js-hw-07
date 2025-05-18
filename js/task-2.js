@@ -31,5 +31,5 @@ const images = [
 images.forEach(image => {
   document
   .querySelector(".gallery")
-  .insertAdjacentHTML("beforeend",`<div><img src="${image.url}" alt="${image.alt}"></div>`);
+  .insertAdjacentHTML("beforeend",`<li><img src="${image.url}" alt="${image.alt}"></li>`);
 });
